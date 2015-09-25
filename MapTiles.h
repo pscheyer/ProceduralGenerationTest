@@ -17,5 +17,14 @@ typedef NS_ENUM(NSInteger, MapTileType) {
 
 @interface MapTiles : NSObject
 
+@property (nonatomic, readonly) NSUInteger count;
+@property (nonatomic, readonly) CGSize gridSize;
+
+-(instancetype) initWithGridSize:(CGSize)size;
+-(MapTileType) tileTypeAt:(CGPoint)tileCoordinate;
+-(void) setTileType:(MapTileType)type at:(CGPoint)tileCoordinate;
+-(BOOL) isEdgeTileAt:(CGPoint)tileCoordinate;
+-(BOOL) isValidTileCoordinateAt:(CGPoint)tileCoordinate;
+
 
 @end

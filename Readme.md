@@ -51,6 +51,17 @@ add stub implementation of `generateTileGrid` to `Map.m`. Stub sets start positi
 
 A C array is used instead of an NSMutableArray to avoid boxing integers into object and then unboxing them again to use them. `MapTiles` grid is an array of integers, so a C array works.
 
-Added enum to `MapTiles.h`. It enumerates four types of `MapTileType` corresponding to -1 through 2.
+Added enum to `MapTiles.h`. It enumerates four types of `MapTileType` corresponding to -1 through 2. Integer values were selected to make it easier to convert the 2d grid array into the tiles located in tiles.atlas named `1.png` and `2.png`.
+
+add properties and method prototypes to `MapTiles.h`. 
+
+-NSUInteger `count`
+-CGSize `gridSize`
+
+-instanceType `initWithGridSize` that takes a CGSize `size`
+-MapTileType `tileTypeAt` takes a CGPoint `tileCoordinate`
+-`setTileType` takes a MapTileType `type` and a CGPoint `tileCoordinate`.
+-BOOL `isEdgeTileAt` takes a CGPoint `tileCoordinate`
+-BOOL `isValidTileCoordinateAt` takes a CGPoint `tileCoordinate`.
 
 
