@@ -51,4 +51,6 @@ add stub implementation of `generateTileGrid` to `Map.m`. Stub sets start positi
 
 A C array is used instead of an NSMutableArray to avoid boxing integers into object and then unboxing them again to use them. `MapTiles` grid is an array of integers, so a C array works.
 
+Added enum to `MapTiles.h`. It enumerates four types of `MapTileType` corresponding to -1 through 2.
+
 

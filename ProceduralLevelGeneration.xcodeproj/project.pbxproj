@@ -56,8 +56,8 @@
 		449AF6DC17B52CAD0004289F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D3AE4A941BB5992A002F1F8D /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Map.h; path = ../Map.h; sourceTree = "<group>"; };
 		D3AE4A951BB5992A002F1F8D /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Map.m; path = ../Map.m; sourceTree = "<group>"; };
-		D3AE4A971BB5A02A002F1F8D /* MapTiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTiles.h; sourceTree = "<group>"; };
-		D3AE4A981BB5A02A002F1F8D /* MapTiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapTiles.m; sourceTree = "<group>"; };
+		D3AE4A971BB5A02A002F1F8D /* MapTiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapTiles.h; path = ../MapTiles.h; sourceTree = "<group>"; };
+		D3AE4A981BB5A02A002F1F8D /* MapTiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapTiles.m; path = ../MapTiles.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,6 @@
 		449AF6AA17B52CAD0004289F = {
 			isa = PBXGroup;
 			children = (
-				D3AE4A971BB5A02A002F1F8D /* MapTiles.h */,
-				D3AE4A981BB5A02A002F1F8D /* MapTiles.m */,
 				449AF6BE17B52CAD0004289F /* ProceduralLevelGeneration */,
 				449AF6BF17B52CAD0004289F /* Supporting Files */,
 				449AF6B517B52CAD0004289F /* Frameworks */,
@@ -127,6 +125,8 @@
 				449AF6CA17B52CAD0004289F /* Main.storyboard */,
 				D3AE4A941BB5992A002F1F8D /* Map.h */,
 				D3AE4A951BB5992A002F1F8D /* Map.m */,
+				D3AE4A971BB5A02A002F1F8D /* MapTiles.h */,
+				D3AE4A981BB5A02A002F1F8D /* MapTiles.m */,
 				449AF6D017B52CAD0004289F /* MyScene.h */,
 				449AF6D117B52CAD0004289F /* MyScene.m */,
 				4414DA7517BD27D400E3CE36 /* Sound */,

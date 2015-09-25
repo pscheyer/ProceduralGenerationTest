@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, MapTileType) {
+    MapTileTypeInvalid = -1,
+    MapTileTypeNone = 0,
+    MapTileTypeFloor = 1,
+    MapTileTypeWall = 2,
+};
+
 @interface MapTiles : NSObject
+
 
 @end
