@@ -72,4 +72,11 @@ Add a class extension above the implementation in `MapTiles.m`.
 @end
 ```
 
+Implement `initWithGridSize`. 
+Initialize properties `_gridSize` and `_count`. Set `_count` to `size.width * size.height` as the total number of tiles in the grid is equal to width of grid times grid height. 
+
+Using this count we allocate memory for tiles array with `calloc`, which ensures all variables in the array are initialized to zero.
+
+ARC will not manage memory allocated using `calloc` or `malloc`, so we need to release the memory when we deallocate the `MapTiles` object. 
+
 

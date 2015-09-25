@@ -14,4 +14,21 @@
 
 @implementation MapTiles
 
+-(void) dealloc {
+    if (self.tiles) {
+        free(self.tiles);
+        self.tiles = nil;
+    }
+}
+
+- (instancetype) initWithGridSize:(CGSize)size {
+    if ((self = [super init] )){
+        _gridSize = size;
+        _count = (NSUInteger) size.width * size.height;
+        self.tiles = calloc(self.count, sizeof(NSInteger));
+        NSAssert(self.tiles, @"Could not allocate memory for tiles");
+    }
+    return self;
+}
+
 @end
