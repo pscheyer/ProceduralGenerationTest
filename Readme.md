@@ -44,6 +44,11 @@ Drunkard Walk Description:
 We'll make a property to hold the number of tiles to generate so that the map can be flexible.
 
 20150925 1015CST
-add stub implementation of generate tile grid.  
+add stub implementation of `generateTileGrid` to `Map.m`. Stub sets start position to center of grid and then enters a loop that runs until the `currentFloor` is equal to the desired number of floor tiles defined by the `maxFloorCount` property.
+
+###Managing the Tile Grid
+`MapTiles` class is a wrapper for a dynamic C array that will manage a 2d grid for the map class.
+
+A C array is used instead of an NSMutableArray to avoid boxing integers into object and then unboxing them again to use them. `MapTiles` grid is an array of integers, so a C array works.
 
 
