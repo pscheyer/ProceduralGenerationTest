@@ -28,6 +28,19 @@ We'll rebuild the map class from scratch.
 20150925 1004CST
 added several features to new `Map` class. In `Map.h` added properties `gridSize` (`CGSize`), `spawnPoint` (`CGPoint`), `exitpoint` (`CGPoint`). Also added instancetypes for the `mapWithGridSize` and `initWithGridSize`.
 
-Added stub implementation to `Map.m` for `mapWithGridSize` and `initWithGridSize`. 
+Added stub implementation to `Map.m` for `mapWithGridSize` and `initWithGridSize`.
+
+Game currently creates map without borders, and hero/exit spawn simultaneously and in same location, causing new map and spawn. Loops.
+
+###Drunkard Walk Algorithm
+Using the Drunkard Walk subtype of random walk to generate the dungeon.
+
+Drunkard Walk Description:
+1. Choose a random start position in grid and mark it as floor
+2. Pick a random direction to move.
+3. Move in that direction and mark the position as a floor, unless it already is a floor.
+4. Repeat steps 2 and 3 until a desired number of floors have been placed in the grid.
+
+We'll make a property to hold the number of tiles to generate so that the map can be flexible.  
 
 

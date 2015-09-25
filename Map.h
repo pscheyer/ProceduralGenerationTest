@@ -17,4 +17,6 @@
 + (instancetype) mapWithGridSize:(CGSize)gridSize;
 - (instancetype) initWithGridSize:(CGSize)gridSize;
 
+@property(nonatomic) NSUInteger maxFloorCount;
+
 @end
