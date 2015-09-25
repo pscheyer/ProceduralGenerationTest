@@ -10,4 +10,11 @@
 
 @interface Map : SKNode
 
+@property (nonatomic) CGSize gridSize;
+@property (nonatomic, readonly) CGPoint spawnPoint;
+@property (nonatomic, readonly) CGPoint exitPoint;
+
++ (instancetype) mapWithGridSize:(CGSize)gridSize;
+- (instancetype) initWithGridSize:(CGSize)gridSize;
+
 @end

@@ -56,8 +56,8 @@
 		449AF6D117B52CAD0004289F /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
 		449AF6D517B52CAD0004289F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		449AF6DC17B52CAD0004289F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D3AE4A941BB5992A002F1F8D /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
-		D3AE4A951BB5992A002F1F8D /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Map.m; sourceTree = "<group>"; };
+		D3AE4A941BB5992A002F1F8D /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Map.h; path = ../Map.h; sourceTree = "<group>"; };
+		D3AE4A951BB5992A002F1F8D /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Map.m; path = ../Map.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,6 @@
 		449AF6AA17B52CAD0004289F = {
 			isa = PBXGroup;
 			children = (
-				D3AE4A941BB5992A002F1F8D /* Map.h */,
-				D3AE4A951BB5992A002F1F8D /* Map.m */,
 				449AF6BE17B52CAD0004289F /* ProceduralLevelGeneration */,
 				449AF6BF17B52CAD0004289F /* Supporting Files */,
 				449AF6B517B52CAD0004289F /* Frameworks */,
@@ -125,6 +123,8 @@
 				448D6AFF17B7CAA3002FA381 /* DPad.h */,
 				448D6B0017B7CAA3002FA381 /* DPad.m */,
 				449AF6CA17B52CAD0004289F /* Main.storyboard */,
+				D3AE4A941BB5992A002F1F8D /* Map.h */,
+				D3AE4A951BB5992A002F1F8D /* Map.m */,
 				448F951917B988DD00C1E2B6 /* MapTiles.h */,
 				448F951A17B988DD00C1E2B6 /* MapTiles.m */,
 				449AF6D017B52CAD0004289F /* MyScene.h */,
