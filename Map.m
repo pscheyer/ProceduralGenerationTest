@@ -24,4 +24,13 @@
     return self;
 }
 
+- (void) generateTileGrid {
+    CGPoint startPoint = CGPointMake(self.gridSize.width / 2, self.gridSize.height / 2);
+    NSUInteger currentFloorCount = 0;
+    
+    while (currentFloorCount < self.maxFloorCount) {
+        currentFloorCount ++;
+    }
+}
+
 @end

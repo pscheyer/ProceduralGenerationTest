@@ -41,6 +41,9 @@ Drunkard Walk Description:
 3. Move in that direction and mark the position as a floor, unless it already is a floor.
 4. Repeat steps 2 and 3 until a desired number of floors have been placed in the grid.
 
-We'll make a property to hold the number of tiles to generate so that the map can be flexible.  
+We'll make a property to hold the number of tiles to generate so that the map can be flexible.
+
+20150925 1015CST
+add stub implementation of generate tile grid.  
 
 
