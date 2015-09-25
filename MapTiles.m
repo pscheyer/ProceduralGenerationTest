@@ -8,6 +8,10 @@
 
 #import "MapTiles.h"
 
+@interface MapTiles ()
+@property (nonatomic) NSInteger *tiles;
+@end
+
 @implementation MapTiles
 
 @end

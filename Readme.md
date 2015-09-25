@@ -64,4 +64,12 @@ add properties and method prototypes to `MapTiles.h`.
 -BOOL `isEdgeTileAt` takes a CGPoint `tileCoordinate`
 -BOOL `isValidTileCoordinateAt` takes a CGPoint `tileCoordinate`.
 
+Add a class extension above the implementation in `MapTiles.m`. 
+
+```objective-c
+@interface MapTiles ()
+@property (nonatomic) NSInteger *tiles;
+@end
+```
+
 
