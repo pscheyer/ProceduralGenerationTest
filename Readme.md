@@ -26,6 +26,8 @@ Our design is currently not very interesting, and it is too easy to win.
 We'll rebuild the map class from scratch.
 
 20150925 1004CST
-added several features to new `Map` class. In `Map.h` added properties `gridSize` (`CGSize`), `spawnPoint` (`CGPoint`), `exitpoint` (`CGPoint`). Also added instancetypes for the `mapWithGridSize` and `initWithGridSize`. 
+added several features to new `Map` class. In `Map.h` added properties `gridSize` (`CGSize`), `spawnPoint` (`CGPoint`), `exitpoint` (`CGPoint`). Also added instancetypes for the `mapWithGridSize` and `initWithGridSize`.
+
+Added stub implementation to `Map.m` for `mapWithGridSize` and `initWithGridSize`. 
 
 

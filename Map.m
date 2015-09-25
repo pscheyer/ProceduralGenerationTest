@@ -10,4 +10,18 @@
 
 @implementation Map
 
++(instancetype) mapWithGridSize:(CGSize)gridSize{
+    return [[self alloc] initWithGridSize:gridSize];
+}
+
+-(instancetype) initWithGridSize:(CGSize)gridSize{
+    if(( self = [super init] )) {
+        self.gridSize = gridSize;
+        _spawnPoint = CGPointZero;
+        _exitPoint = CGPointZero;
+    }
+    
+    return self;
+}
+
 @end
